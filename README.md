@@ -1,8 +1,5 @@
 # Apache Hive 3.1.3 Docker image
 
-### Current image is Hive 3.1.3. Other versions are available in branches.
-
-
 ```bash
 docker build -t <image-name> .
 ```
