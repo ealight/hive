@@ -20,8 +20,7 @@ $HADOOP_HOME/bin/hdfs dfsadmin -safemode leave \
 
 if [ ! -d "$DERBY_HOME/metastore_db" ]
 then
-  schematool -initSchema -dbType derby \
-  && schematool -initSchema -dbType hive -metaDbType derby
+  schematool -dbType derby -initSchema
 else
   echo "Metastore already initialized"
 fi

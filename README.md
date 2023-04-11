@@ -1,7 +1,4 @@
-# Apache Hive 3.1.3 Docker image
-
-### Current image is Hive 3.1.3. Other versions are available in branches.
-
+# Apache Hive 2.3.9 Docker image
 
 ```bash
 docker build -t <image-name> .
@@ -13,4 +10,4 @@ To persist hdfs, hive and Derby:
 docker start -p 10000:10000 -v <volume-name>:usr/local <image-name>
 ```
 
-With Oracle JDK8 and Hadoop 3.1.3 and Tez 0.9.1.
+With Oracle JDK8 and Hadoop 2.3.9 and Tez 0.9.1.

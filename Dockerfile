@@ -1,7 +1,7 @@
 FROM dvoros/tez:0.9.1
 
-RUN curl -s https://downloads.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz | tar -xz -C /usr/local
-RUN cd /usr/local && ln -s /usr/local/apache-hive-3.1.3-bin hive
+RUN curl -s https://downloads.apache.org/hive/hive-2.3.9/apache-hive-2.3.9-bin.tar.gz | tar -xz -C /usr/local
+RUN cd /usr/local && ln -s apache-hive-2.3.9-bin hive
 ENV HIVE_HOME /usr/local/hive
 
 RUN curl -s https://downloads.apache.org/db/derby/db-derby-10.14.2.0/db-derby-10.14.2.0-bin.tar.gz | tar -xz -C /usr/local
