@@ -1,3 +1,13 @@
+# [Docker Hub](https://hub.docker.com/r/ealight/hive/tags)
+
+[![DockerPulls](https://img.shields.io/docker/pulls/ealight/hive.svg)](https://hub.docker.com/r/ealight/hive)
+[![DockerStars](https://img.shields.io/docker/stars/ealight/hive.svg)](https://hub.docker.com/r/ealight/hive)
+
+Pull:
+```docker pull ealight/hive:3.1.3```
+
+---
+
 # Apache Hive 3.1.3 Docker image
 
 ```bash
