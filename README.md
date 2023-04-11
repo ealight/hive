@@ -1,6 +1,14 @@
-# Apache Hive 3.1.3 Docker image
+# [Docker Hub](https://hub.docker.com/r/ealight/hive)
 
-### Current image is Hive 3.1.3. Other versions are available in branches.
+[![DockerPulls](https://img.shields.io/docker/pulls/ealight/hive.svg)](https://hub.docker.com/r/ealight/hive)
+[![DockerStars](https://img.shields.io/docker/stars/ealight/hive.svg)](https://hub.docker.com/r/ealight/hive)
+
+Pull:
+```docker pull ealight/hive:3.1.3```
+
+---
+
+# Apache Hive 3.1.3 Docker image
 
 ```bash
 docker build -t <image-name> .
@@ -16,5 +24,6 @@ With Oracle JDK8 and Hadoop 3.1.3 and Tez 0.9.1.
 
 ---
 
-[Docker Hub](https://hub.docker.com/r/ealight/hive)
+### Main branch contains Hive 3.1.3 image. Other versions are available in other branches.
+
 
