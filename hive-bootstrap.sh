@@ -21,6 +21,11 @@ $HADOOP_HOME/bin/hdfs dfsadmin -safemode leave \
 if [ ! -d "$DERBY_HOME/metastore_db" ]
 then
   schematool -dbType derby -initSchema
+  # Fix schematool constraints schema mistake
+  echo "CONNECT 'jdbc:derby://localhost:1527/metastore_db;create=true';
+        ALTER TABLE APP.KEY_CONSTRAINTS ALTER COLUMN CHILD_INTEGER_IDX NULL;" > fix
+  ij fix
+  echo "Schema has been fixed"
 else
   echo "Metastore already initialized"
 fi

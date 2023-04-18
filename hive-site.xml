@@ -5,7 +5,7 @@
   </property>
   <property>
     <name>hive.execution.engine</name>
-    <value>tez</value>
+    <value>mr</value>
   </property>
   <property>
     <name>hive.jar.directory</name>
