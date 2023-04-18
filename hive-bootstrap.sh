@@ -30,7 +30,8 @@ else
   echo "Metastore already initialized"
 fi
 
-export HDFS_DATANODE=$(hdfs getconf -confkey fs.defaultFS)
+echo "export HDFS_DATANODE=$(hdfs getconf -confkey fs.defaultFS)" > ~/.bashrc
+echo "source ~/.bashrc" > ~/.bash_history
 echo "beeline -u 'jdbc:hive2://localhost:10000' -n root" > ~/.bash_history
 
 mkdir -p /tmp/root
