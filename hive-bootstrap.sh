@@ -24,12 +24,13 @@ then
   # Fix schematool constraints schema mistake
   echo "CONNECT 'jdbc:derby://localhost:1527/metastore_db;create=true';
         ALTER TABLE APP.KEY_CONSTRAINTS ALTER COLUMN CHILD_INTEGER_IDX NULL;" > fix
-  ij fix
+  ij fix | exit
   echo "Schema has been fixed"
 else
   echo "Metastore already initialized"
 fi
 
+export HDFS_DATANODE=$(hdfs getconf -confkey fs.defaultFS)
 echo "beeline -u 'jdbc:hive2://localhost:10000' -n root" > ~/.bash_history
 
 mkdir -p /tmp/root
