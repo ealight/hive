@@ -29,3 +29,5 @@ RUN chmod -R 700 /etc/docker-startup
 
 # Downstream images can use this too start Hadoop and Hive services
 ENV BOOTSTRAP /etc/docker-startup/hive-bootstrap.sh
+
+
